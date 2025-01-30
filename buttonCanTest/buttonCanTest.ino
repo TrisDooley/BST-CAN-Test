@@ -1,8 +1,8 @@
 #include <CAN.h>
 #include <LiquidCrystal_I2C.h>
 
-#define TX_GPIO_NUM 5
-#define RX_GPIO_NUM 4
+#define TX_GPIO_NUM 16
+#define RX_GPIO_NUM 17
 #define CANID 25
 
 #define PIN_0 25
@@ -41,8 +41,8 @@ void setup() {
   Serial.println("New Program");
 
   //LCD Setup
-  lcd.init();
-  lcd.backlight();
+  // lcd.init();
+  // lcd.backlight();
 
   //Pins setup
   pinMode(PIN_0, INPUT_PULLDOWN);
